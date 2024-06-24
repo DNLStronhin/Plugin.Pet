@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Register xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/crm/2011/tools/pluginregistration">
+  <Solutions>
+    <Solution Assembly="PPST.TC01023Stronhin.dll" Id="714fc1cc-d2b3-4e65-9644-6391bf433cb4" IsolationMode="Sandbox" SourceType="Database">
+      <PluginTypes>
+        <clear />
+        <Plugin Description="Plug-in to CreateMultiple of new_pet" FriendlyName="CreateMultiple of new_pet" Name="PPST.TC01023Stronhin.PreValidationnew_petCreateMultiple" Id="46b1a7bd-4179-4d5f-b61d-cd9844591bb5" TypeName="PPST.TC01023Stronhin.PreValidationnew_petCreateMultiple">
+          <Steps>
+            <clear />
+            <Step AsyncAutoDelete="false" Name="CreateMultiple of new_pet" Description="CreateMultiple of new_pet" FilteringAttributes="statecode" Id="920c861e-ff28-ef11-840a-002248c82767" ImpersonatingUserId="00000000-0000-0000-0000-000000000000" MessageName="CreateMultiple" Mode="Synchronous" PrimaryEntityName="new_pet" Rank="1" Stage="PostOutsideTransaction" SupportedDeployment="ServerOnly" MessageEntityId="00000000-0000-0000-0000-000000000000">
+              <Images />
+            </Step>
+          </Steps>
+        </Plugin>
+        <Plugin Description="Plug-in to Update of new_pet" FriendlyName="Update of new_pet" Name="PPST.TC01023Stronhin.PostOperationnew_petUpdate" Id="00000000-0000-0000-0000-000000000000" TypeName="PPST.TC01023Stronhin.PostOperationnew_petUpdate">
+          <Steps>
+            <clear />
+            <Step AsyncAutoDelete="false" Name="Update of new_pet" Description="Update of new_pet" FilteringAttributes="statecode" Id="00000000-0000-0000-0000-000000000000" ImpersonatingUserId="00000000-0000-0000-0000-000000000000" MessageName="Update" Mode="Synchronous" PrimaryEntityName="new_pet" Rank="1" Stage="PostOutsideTransaction" SupportedDeployment="ServerOnly" MessageEntityId="00000000-0000-0000-0000-000000000000">
+              <Images />
+            </Step>
+          </Steps>
+        </Plugin>
+      </PluginTypes>
+    </Solution>
+  </Solutions>
+  <XamlWorkflows />
+  <DataProviders />
+</Register>
